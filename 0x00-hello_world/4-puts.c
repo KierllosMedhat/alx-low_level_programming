@@ -1,7 +1,8 @@
 #include <stdio.h>
 #include <string.h>
 /**
- * main function - prents some words
+ * main - prents some words
+ * Return: 0 for succes
  */
 int main(void)
 {
