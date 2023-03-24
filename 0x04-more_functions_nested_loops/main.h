@@ -7,5 +7,6 @@
  * Return: 0 for lowercase and 1 for uppercase
  */
 int _isupper(int c);
+int _isdigit(int c);
 
 #endif /* MAIN_H */
