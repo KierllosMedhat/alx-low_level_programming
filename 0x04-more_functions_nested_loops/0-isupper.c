@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include "main.h"
 
 
 /**
@@ -6,7 +7,7 @@
  * @c: the letter to be checked
  * Return: 1 for uppercase and 0 for lower case
  */
-int _isupper(int c)
+int _isupper(char c)
 {
 	if (c < 91)
 		return (1);
