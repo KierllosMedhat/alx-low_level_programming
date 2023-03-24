@@ -2,7 +2,7 @@
 #define MAIN_H
 
 #include <stdio.h>
-
+#include <2-largest_number.c>
 /**
  * positive_or_negative - Test for positive and negative numbers
  * @i: the number to be checked
