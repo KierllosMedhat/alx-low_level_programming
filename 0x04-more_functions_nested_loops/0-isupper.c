@@ -7,7 +7,7 @@
  * @c: the letter to be checked
  * Return: 1 for uppercase and 0 for lower case
  */
-int _isupper(char c)
+int _isupper(int c)
 {
 	if (c < 91)
 		return (1);

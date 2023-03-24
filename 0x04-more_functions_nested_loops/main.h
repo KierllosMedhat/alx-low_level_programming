@@ -7,6 +7,6 @@
  * @c: alphabet letter
  * Return: 0 for lowercase and 1 for uppercase
  */
-int _isupper(char c);
+int _isupper(int c);
 
 #endif /* MAIN_H */
