@@ -6,14 +6,18 @@
  */
 int print_last_digit(int i)
 {
+	int j;
+
 	if (i < 0)
 	{
-		_putchar(48 + (-i) % 10);
-		return (48 + (-i) % 10);
+		j = -i % 10;
+		_putchar(48 + j);
+		return (j);
 	}
 	else
 	{
-		_putchar(48 + i % 10);
-		return (48 + i % 10);
+		j = i % 10;
+		_putchar(48 + j);
+		return (j);
 	}
 }
