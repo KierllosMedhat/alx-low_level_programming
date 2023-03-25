@@ -16,8 +16,8 @@ int print_last_digit(int i)
 	}
 	else if (i == -2147483648)
 	{
-		 _putchar('8');
-		 return (8);
+		_putchar('8');
+		return (8);
 	}
 	else
 	{
