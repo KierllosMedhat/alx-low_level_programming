@@ -14,8 +14,6 @@ int is_palindrome(char *s)
 
 	if (length == 0)
 		return (1);
-	if (length == 1)
-		return (1);
 	return (is_palindrome_hlp(s, length, length));
 }
 
@@ -40,7 +38,9 @@ int calc_length(char *s)
  */
 int is_palindrome_hlp(char *s, int i, int length)
 {
-	if (length == 2)
+	if (length == 1)
+		return (1);
+	else if (length == 2)
 	{
 		if (s[0] == s[1])
 			return (1);
