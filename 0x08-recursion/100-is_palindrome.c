@@ -10,13 +10,13 @@ int is_palindrome_hlp(char *s, int iterator, int length);
  */
 int is_palindrome(char *s)
 {
-	int length = calc_length(*s);
+	int length = calc_length(s);
 
-	if (s == "")
+	if (length == 0)
 		return (1);
 	if (length == 1)
 		return (1);
-	return (is_palindrome_hlp(*s, length, length));
+	return (is_palindrome_hlp(s, length, length));
 }
 
 /**
