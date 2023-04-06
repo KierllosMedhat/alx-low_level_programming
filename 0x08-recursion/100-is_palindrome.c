@@ -42,7 +42,7 @@ int is_palindrome_hlp(char *s, int i, int length)
 {
 	if (length == 2)
 	{
-		if (*s[0] == *s[1])
+		if (s[0] == s[1])
 			return (1);
 		return (0);
 	}
