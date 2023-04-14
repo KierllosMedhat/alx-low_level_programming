@@ -1,5 +1,5 @@
 #include "main.h"
-#include "_putchar.c"
+#include "stdio.h"
 /**
  * main - prints function name
  * @argc: args. counter
@@ -8,11 +8,7 @@
  */
 int main(int argc, char *argv[])
 {
-	int i;
-
-	for (i = 0; i != '\0'; i++)
-	{
-		_putchar(argv[argc - 1][i]);
-	}
+	if (argc > 0)
+		printf("%s\n",argv[0]);
 	return (0);
 }
