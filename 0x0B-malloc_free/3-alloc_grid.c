@@ -10,7 +10,7 @@
 
 int **alloc_grid(int width, int height)
 {
-	int i, j;
+	int i;
 	int **arr;
 
 	if (width <= 0 || height <= 0)
@@ -23,7 +23,7 @@ int **alloc_grid(int width, int height)
 		return (NULL);
 	}
 
-	for (i = 0; i <= width * length; i++)
+	for (i = 0; i < width * height; i++)
 	{
 		arr[i] = 0;
 	}
