@@ -10,18 +10,19 @@
 char *_strdup(char *str)
 {
 	char *dup_str;
-	long unsigned int i;
+	long unsigned int i, j;
 
 	if (str == NULL)
 		return (NULL);
+	for (i = 0; str[i] != '\0'; i++);
 
-	dup_str = malloc(strlen(str) * sizeof(char));
+	dup_str = malloc(i * sizeof(char) + 1);
 	if (dup_str == NULL)
 		return (NULL);
 
-	for (i = 0; i < sizeof(str); i++)
+	for (j = 0; j <= i; j++)
 	{
-		dup_str[i] = str[i];
+		dup_str[j] = str[j];
 	}
 
 	return (dup_str);
