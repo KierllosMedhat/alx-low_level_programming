@@ -13,7 +13,7 @@ void *malloc_checked(unsigned int b)
 	void *pointer;
 
 	pointer = malloc(b);
-	if (pointer != null)
+	if (pointer != NULL)
 		return (pointer);
 	else
 		exit(98);
